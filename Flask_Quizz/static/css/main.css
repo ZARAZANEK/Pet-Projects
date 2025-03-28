@@ -1,0 +1,916 @@
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#quizContainer {
+    margin-top: 200px;
+    margin-left: -100px;
+    left: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    top: 100%;
+    z-index: 1;
+}
+
+/* Підключаємо шрифт Roboto з Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+.card-quiz {
+    background-image: linear-gradient(140deg, #900DC9 40%, #5A09C4 60%);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: -40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 370px;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+.card-quiz:hover {
+    transform: translateY(-15px) scale(1.1);
+    background-image: linear-gradient(280deg, #900DC9 40%, #5A09C4 60%);
+}
+
+.card-quiz img {
+    margin-top: -420px;
+    margin-left: -21px;
+    width: 350px;
+    height: 120px;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-quiz h3 {
+    margin-top: 60px;
+    text-align: center;
+    padding: 40px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Додаємо жирний шрифт */
+}
+
+.card-quiz h5 {
+    padding: -150px;
+    top: 60px;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 30px;
+}
+
+.card-quiz p {
+    margin-top: -42px;
+    font-size: 18px;
+    text-align: left;
+    padding: -100px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 30px;
+}
+
+
+/* Стиль для кнопки 1 */
+.button-1 {
+    background-color: black;
+    border: solid 3px;
+    border-radius: 9px;
+    width: 120px;
+    height: 35px;
+    transition: transform 0.5s ease-in-out, scale 0.5s ease-in-out;
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.button-1:hover {
+    background-color: #3ad3c4;
+    transform: translateY(-10px) scale(1.1);
+}
+
+/* Стиль для кнопки 2 */
+.button-2 {
+    background-color: #FF8C00;
+    border: solid 3px;
+    border-radius: 9px;
+    width: 120px;
+    height: 35px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out, scale 0.5s ease-in-out;
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.button-2:hover {
+    background-color: #d94e4e;
+    transform: translateY(-10px) scale(1.1);
+}
+
+/* Стиль для кнопки 2 */
+.button-3 {
+    background-color: #D02090;
+    border: solid 3px;
+    border-radius: 9px;
+    width: 60px;
+    height: 30px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out, scale 0.5s ease-in-out;
+    display: block;
+    position: absolute;
+    bottom: 310px;
+    right: 15px;
+    font-size: 17px;
+    z-index: 1;
+}
+
+.button-3:hover {
+    background-color: #d94e4e;
+    transform: translateY(-10px) scale(1.1);
+}
+
+.text {
+    position: absolute; /* Абсолютне позиціонування заголовка */
+    top: 100%;  /* Відстань від верхнього краю контейнера */
+    left: 100%;  /* Відстань від лівого краю контейнера */
+    /*background-color: yellow;  Колір фону */
+    padding: 10px; /* Відступи всередині елемента */
+    border-radius: 5px; /* Закруглені кути */
+    z-index: 1000;
+}
+
+.background-card {
+    position: absolute;
+    opacity: 0;
+    /*transform: translateY(-100%);
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;*/
+    width: 100%;
+    height: 200px;
+    background: #606060;
+    z-index: 1;
+    border-radius: 30px;
+    border-color: None;
+    border: None;
+    opacity: 0.6;
+    transition: transform 0.5s ease-in-out;
+}
+
+.text-input-quiz{
+    position: absolute;
+    width: 450px;
+    height: 40px;
+    background-color: #333333;
+    color: #ddd;
+    border: solid 3px;
+    border-radius: 8px;
+}
+.text-input-quiz:before{
+    background-color: darkslategrey;
+    color: aqua;
+    border-color: white;
+    transform: translateY(-5px);
+
+}
+
+.hiden-text-quiz {
+    position: absolute; /* Абсолютне позиціонування заголовка */
+    top: 100%;  /* Відстань від верхнього краю контейнера */
+    left: 100%;  /* Відстань від лівого краю контейнера */
+    /*background-color: yellow;  Колір фону */
+    padding: 10px; /* Відступи всередині елемента */
+    border-radius: 5px; /* Закруглені кути */
+    z-index: 1;
+    opacity: 1;
+}
+
+.img {
+    width: 700px;
+    height: 600px;
+    z-index: 1;
+}
+
+.background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    object-fit: cover;
+}
+
+.background-register {
+    position: fixed;
+    top: 100%;
+    left: 100%;
+    min-width: 50%;
+    min-height: 50%;
+    width: 1250px;
+    height: 689px;
+    z-index: -5;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    object-fit: cover;
+}
+
+.card-register {
+    position: fixed;
+    top: 100%;
+    left: 100%;
+    min-width: 25%;
+    min-height: 50%;
+    width: 500px;
+    height: 500px;
+    z-index: -5;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    object-fit: cover;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+.background-login {
+    position: fixed;
+    top: 100%;
+    left: 100%;
+    min-width: 50%;
+    min-height: 50%;
+    width: 1250px;
+    height: 670px;
+    z-index: -5;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    object-fit: cover;
+}
+
+.card-login {
+    position: fixed;
+    top: 100%;
+    left: 100%;
+    min-width: 25%;
+    min-height: 50%;
+    width: 500px;
+    height: 500px;
+    z-index: -5;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    object-fit: cover;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+
+.card-account {
+    position: fixed;
+    top: 100%;
+    left: 100%;
+    min-width: 50%;
+    min-height: 50%;
+    width: 1100px;
+    height: 500px;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    object-fit: cover;
+    border: 2px solid #333;
+    border-radius: 25px;
+}
+
+.background-create-quiz {
+    position: fixed;
+    top: 100%;
+    left: 100%;
+    min-width: 50%;
+    min-height: 50%;
+    width: 1250px;
+    height: 689px;
+    z-index: -5;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    object-fit: cover;
+}
+
+.card-create-quiz {
+    position: fixed;
+    top: 100%;
+    left: 100%;
+    min-width: 25%;
+    min-height: 50%;
+    width: 500px;
+    height: 500px;
+    z-index: -5;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    object-fit: cover;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    padding: 20px;
+    margin-left: 250px;
+}
+
+
+.hide {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.visable {
+    opacity: 1;
+    transform: translateX(100%);
+}
+
+/* Для того щоб приймати від користувача текст*/
+.form-control3 {
+    padding-top: -30px; /* Відступ зверху для розміщення тексту у верхньому куті */
+    padding-left: 0px; /* Відступ зліва для розміщення тексту у лівому куті */
+    box-sizing: border-box; /* Включення відступів у загальний розмір елемента */
+    width: 100%; /* Ширина поля вводу */
+    height: 100px; /* Висота поля вводу (можна змінити відповідно до ваших потреб) */
+    resize: none; /* Забороняє зміну розмірів поля вводу */
+    border-radius: 5px;
+    z-index: 1;
+}
+
+
+.form-control3:focus {
+    border-color: #66afe9; /* Колір рамки при фокусуванні */
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5); /* Підсвічування рамки */
+    outline: none; /* Вимкнення стандартного контуру */
+    z-index: 1;
+}
+
+  
+.form-signin {
+    max-width: 330px;
+    background-color: transparent;
+    padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+    background-color: transparent;
+    z-index: 2;
+}
+
+.form-signin input[type="email"],
+.form-signin input[type="password"] {
+    background-color: transparent;
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px solid #ccc; /* Додаємо рамку */
+    color: #000; /* Колір тексту */
+    box-shadow: none; /* Вимикаємо тінь */
+    z-index: 2;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    z-index: 2;
+}
+
+.form-signin input[type="email"]:focus,
+.form-signin input[type="password"]:focus {
+    outline: none; /* Вимикаємо стандартне підсвічування */
+    box-shadow: none; /* Вимикаємо тінь при фокусі */
+    z-index: 2;
+}
+
+
+
+.card-true-or-false {
+    background-image: linear-gradient(140deg, #900DC9 40%, #5A09C4 60%);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 370px;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+.card-true-or-false:hover {
+    transform: translateY(-15px) scale(1.1);
+    background-image: linear-gradient(280deg, #900DC9 40%, #5A09C4 60%);
+}
+
+.card-true-or-false img {
+    margin-top: -420px;
+    margin-left: -21px;
+    width: 350px;
+    height: 120px;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-true-or-false h3 {
+    margin-top: 60px;
+    text-align: center;
+    padding: 40px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Додаємо жирний шрифт */
+}
+
+.card-true-or-false h5 {
+    padding: -150px;
+    top: 60px;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-true-or-false p {
+    margin-top: -42px;
+    font-size: 18px;
+    text-align: left;
+    padding: -100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#quizContainer2 {
+    margin-top: 100px;
+    margin-left: -100px;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    z-index: 1;
+}
+
+.question {
+    margin-left: -20%;
+    margin-top: 120px;
+}
+
+.answers .btn {
+    margin: 5px 0;
+    width: 100%;
+    margin-top: 190px;
+}
+
+.btn.correct {
+    background-color: #28a745;
+    border-color: #28a745;
+    margin-top: 120px;
+    margin-left: 183px;
+}
+
+.btn-wrong {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.question {
+    text-align: center;
+    left: 100%;
+}
+
+.btn-game {
+    background-color: #A95A00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Плавний перехід */
+}
+
+.btn-game:hover {
+    background-color: rgb(0, 105, 217);
+}
+
+
+.final-results {
+    margin-top: 210px;
+}
+
+.final-quiz-card {
+    background-color:rgb(0, 105, 217);
+    border: 1px solid;
+    border-radius: 15px;
+    margin-top: 100px;
+    width: 550px;
+    height: 350px;
+    animation: changeColor 2s infinite; /* Додаємо анімацію */
+    opacity: 0.8;
+}
+
+
+.video-container {
+    position: relative;
+}
+
+.background-video-game {
+    width: 100%;
+    height: 100%;
+    transition: opacity 2.5s ease;
+    z-index: -1;
+}
+
+.hidden {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.input-option {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #246907;
+    color: white;
+}
+
+.btn-option-sumbit {
+    top: 100%;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    color: white;
+    border: 1px solid;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+.btn-option-sumbit:hover {
+    transform: translateY(-7px);
+    background-color: #266F07;
+}
+
+
+.background-video-donat {
+    position: fixed;
+    top: 100%;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    object-fit: cover;
+}
+
+.button-edit {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: #5A09C4;
+    transition: transform 0.5s ease-in-out;
+    border: 1px solid;
+    border-radius: 9px;
+}
+.button-edit:hover {
+    background-color: #900DC9;
+    transform: translateY(-5px);
+}
+
+
+/* Для того щоб приймати від користувача текст тобто що бракує сайту */
+.form-control3 {
+    padding-top: -30px; /* Відступ зверху для розміщення тексту у верхньому куті */
+    padding-left: 0px; /* Відступ зліва для розміщення тексту у лівому куті */
+    box-sizing: border-box; /* Включення відступів у загальний розмір елемента */
+    width: 100%; /* Ширина поля вводу */
+    height: 100px; /* Висота поля вводу (можна змінити відповідно до ваших потреб) */
+    resize: none; /* Забороняє зміну розмірів поля вводу */
+    border-radius: 5px;
+}
+
+
+.form-control3:focus {
+    border-color: #66afe9; /* Колір рамки при фокусуванні */
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5); /* Підсвічування рамки */
+    outline: none; /* Вимкнення стандартного контуру */
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+* {margin: 0; padding: 0;}
+body {margin: 0; padding: 0;}
+html {margin: 0; padding: 0;}
+input {background-color: #343a40!important; color: white!important; border-color: black !important;}
+select {
+    background-color: #343a40 !important;
+    color: white !important; /* Додано !important для кольору */
+    border-color: black !important;
+}
+/* rgb(32, 178, 170) */
+/* input {background-color:rgba(32, 178, 170, 0) !important;} */
+main, html, body {background-color: lightslategray;}
+a, button, div {color: white!important;}
+/*rgb(39, 39, 69)*/
+/* Загальні налаштування для горизонтальних та вертикальних скролів */
+li>a {
+    padding: 5px;
+    width: 100%;
+}
+button:hover, li>a:hover {
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: #343a40!important;
+}
+.my1:hover {
+    border-radius: 0;
+    background-color: rgb(66, 66, 117) !important;
+}
+.my2:hover {
+    text-decoration: underline;
+}
+.sidebar {
+    z-index: 2000;
+}
+.container-fluid {padding-right: 0!important;}
+/* [-------------------------------------------] */
+
+.container2_1 {
+    background: linear-gradient(135deg, rgba(30, 30, 30, 0.75) 0%, rgba(80, 80, 80, 0.75) 100%), url('https://tse2.mm.bing.net/th?id=OIG4.JN0GKndzZdN74AA_iBSP&pid=ImgGn');
+    backdrop-filter: blur(5px);
+    padding: 20px; 
+    padding-top: 25px;
+    border-radius: 20px;
+    margin-left: 300px;
+    margin-top: 100px;
+    margin-right: 50px;
+    z-index: 1;
+}
+.container2_2 {
+    background: linear-gradient(135deg, rgba(30, 30, 30, 0.75) 0%, rgba(80, 80, 80, 0.75) 100%), url('/static/images/3.png');
+    backdrop-filter: blur(5px);
+    padding: 20px; 
+    padding-top: 25px;
+    border-radius: 20px;
+    margin-left: 300px;
+    margin-top: 60px;
+    margin-right: 50px;
+    z-index: 1;
+}
+
+.search-button {
+    background-color: black; /* Колір фону кнопки */
+    color: white; /* Колір тексту кнопки */
+    border: none;
+    border-radius: 50%!important; /* Робить кнопку круглою */
+    width: 50px; /* Ширина кнопки */
+    height: 40px; /* Висота кнопки */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.search-button svg {
+    width: 15px;
+    height: 15px;
+    fill: currentColor;
+}
+.search-button:hover {
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: white;
+    background-color: #343a40; /* Колір фону при наведенні на кнопку */
+}
+
+
+.toast-header {
+    background-color: #721c24;
+}
+.toast-body {
+    background-color: rgb(40, 40, 40);
+}
+
+::-webkit-scrollbar {
+    width: 12px;  /* Ширина вертикального скролу */
+    height: 12px; /* Висота горизонтального скролу */
+}
+
+::-webkit-scrollbar-track {
+    background: black; /* Колір треку скролу */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(53, 53, 95); /* Колір ручки скролу */
+    border-radius: 10px;       /* Радіус заокруглення ручки */
+    border: 3px solid black; /* Колір і ширина межі ручки */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(53, 53, 95); /* Колір ручки при наведенні */
+}
+
+/* Додаткові налаштування для вертикальних скролів */
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(53, 53, 95);
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(53, 53, 95);
+}
+
+.cardmy {
+    margin: 10px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    width: 100%;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+.cardmy:hover {
+    transform: scale(1.1);
+    background-color: #333333 !important;
+}
+
+.card-body {
+    color: white;
+}
+.sidebar {
+    color: white;
+    background-color: black !important;
+    z-index: 2;
+}
+.card-header, .card-footer {
+    background-color: rgb(53, 53, 95);
+}
+.navbar {
+    background-color: black !important;  /*.navbar, .sidebar {    */
+    /* background-color: rgba(58, 211, 196, 0.5) !important;
+    backdrop-filter: blur(10px); */
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 5000!important;
+    width: 80.5%;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
+}
+.card-main {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #343a40;
+    z-index: 1;
+}
+.container1 {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding: 5px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+/* Налаштування для скроллспая */
+.scrollspy-example {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 18px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: scroll;
+    z-index: 2;
+}
+.scrollspy-example h4 {
+    margin-top: 10px;
+    z-index: 2;
+}
+/* Налаштування кольору для прокрутки */
+.scrollspy-example::-webkit-scrollbar {
+    width: 12px;
+    z-index: 2;
+}
+.scrollspy-example::-webkit-scrollbar-track {
+    background: black;
+    z-index: 2;
+}
+.scrollspy-example::-webkit-scrollbar-thumb {
+    background-color: rgb(53, 53, 95); 
+    border-radius: 10px;
+    border: 3px solid black;
+    z-index: 1;
+}
+
+.scrollsp {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: black!important;
+    z-index: 1;
+}
+.cl, .dropdown-menu, .dropdown-item{
+    background-color: #343a40;
+    color:deepskyblue;
+    z-index: 1;
+}
+.dropdown-item:hover {
+    background-color: deepskyblue;
+    color: black!important;
+    z-index: 2;
+}
+.highlight {
+    color: red;
+    background-color: yellow;
+}
+.flash-message {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.flash-message.success {
+    background-color: #026f1b;
+    color: #155724;
+}
+
+.flash-message.danger {
+    background-color: #72020b;
+    color: #721c24;
+}
+
+.pitania-sumbit-button {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+    background-color: #A95A00;
+}
+.pitania-sumbit-button:hover {
+    transform: translateY(-6px);
+    background-color: #ff8800;
+}
+
+.form-controll-spefical {
+    position: relative; /* Додано для коректного позиціонування */
+    width: 400px; /* Встановлено початкову ширину */
+    height: 35px; /* Встановлено початкову висоту */
+    margin-top: 30px; /* Встановлено відступ зверху */
+    transition: width 0.3s ease, height 1s ease, transform 0.3s ease; /* Плавний перехід ширини */
+    background-color: #555;
+    border: 1px solid;
+    border-radius: 6px;
+    font-size: 22px;
+}
+.form-controll-spefical:focus {
+    width: 500px; /* Ширина при фокусі */
+    height: 50px;
+    background-color: #333333;
+    transform: translateX(30px);
+
+}
