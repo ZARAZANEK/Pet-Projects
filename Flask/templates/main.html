@@ -1,0 +1,239 @@
+{% extends  'base.html' %}
+
+{% block title %}
+Головна сторінка
+{% endblock %}
+
+{% block body %}
+
+<div class="image-container2">
+    {% for image in images %}
+        <div class="image" style="background-image: url('{{ image }}');"></div>
+    {% endfor %}
+</div>
+
+<div class="highlighted-text" style="top:40px; left: -20px; max-width: 600px;">
+        <p><h3 style="text-align: center;">Ласкаво просимо на наш сайт!</h3></p>
+        <h5>Ми спеціалізуємось на перевезенні автомобілів з Литви та Польщі, пропонуючи надійні і швидкі транспортні послуги.</h5>
+</div>
+
+<button onclick="window.location.href='{{ url_for('order') }}'" type="button" id="orderButton" class="rainbow-button2" style="position: absolute; top:1650px; left:570px; width:150px; height:70px;">
+    <img src="{{ url_for('static', filename='image/var2_car.png') }}" alt="Icon" class="icon" style="width: 32px; height: 42px;"> Order Now
+</button>
+
+<button onclick="window.location.href='{{ url_for('details') }}'" type="button" id="orderButton" class="rainbow-button" style="position: absolute; top:1650px; left:950px; width:150px; height:70px;">
+    <img src="{{ url_for('static', filename='image/img18.png') }}" alt="Icon" class="icon" style="width: 35px; height: 38px;"> Detail!
+</button>
+
+<img src="{{ url_for('static', filename='image/img15.png') }}" alt="icon" style="position: absolute; top: 1750px; left: 850px; z-index: -1; width:200px; height: 100px;">
+<img src="{{ url_for('static', filename='image/img16.png') }}" alt="icon" style="position: absolute; top: 1730px; left: 675px; z-index: -1; width:120px; height: 160px;">
+<img src="{{ url_for('static', filename='image/img17.png') }}" alt="icon" style="position: absolute; top: 1650px; left: 775px; z-index: -1; width:120px; height: 120px;">
+<img src="{{ url_for('static', filename='image/img14.png') }}" alt="icon" style="position: absolute; top: 1690px; left: 675px; z-index: -1; width:330px; height: 220px;">
+<img class="header__image2" src="{{ url_for('static', filename='image/footer_img.png') }}" alt="icon" style="position: absolute; top: 2170px; left: 575px; z-index: 20;">
+<img class="header__image3" src="{{ url_for('static', filename='image/footer_img2.png') }}" alt="icon" style="position: absolute; top: 2170px; left: 725px; z-index: 20;">
+<img class="header__image4" src="{{ url_for('static', filename='image/footer_img3.png') }}" alt="icon" style="position: absolute; top: 2170px; left: 900px; z-index: 20;">
+
+    <div class="highlighted-text2" style="top:2155px; left:610px;">
+        <p>
+            <h5><a onclick="location.href='viber://pa?chatURI==Максим';" target="_blank" style="text-decoration: none; color: inherit; color: #5358ff;">
+                Viber
+            </a>
+        </h5>
+        </p>
+    </div>
+
+    <div class="highlighted-text2" style="top:2155px; left:765px;">
+        <p>
+            <h5><a onclick="location.href='https://wa.me/+380972079224';" target="_blank" style="text-decoration: none; color: inherit; color: #5358ff;">
+                WatsApp
+            </a>
+        </h5>
+        </p>
+    </div>
+
+    <div class="highlighted-text2" style="top:2155px; left:950px;">
+        <p>
+            <h5><a onclick="location.href='tg://resolve?domain=Max_progger';" target="_blank" class='link' style="text-decoration: none; color: inherit; color: #5358ff;">
+                    Telegram
+                </a>
+            </h5>
+        </p>
+    </div>
+
+
+    <div class="highlighted-text" style="top:2160px; left:-50px;">
+        <p>
+            <h5>Name: Shymkiv Anatoly</h5>
+        </p>
+    </div>
+    <div class="highlighted-text" style="top:2160px; left:200px;">
+        <p>
+            <h5>Gmail:shimkivmaksim4@gmail.com</h5>
+        </p>
+    </div>
+
+    <div class="highlighted-text2" style="position: absolute; top: 1860px; left: 0px;">
+        <h5>
+            <a href="https://www.example.com" class='link' style="text-decoration: none; color: inherit; color: #5358ff;">
+                Privacy Policy
+            </a>
+        </h5>
+    </div>
+    
+    <div class="highlighted-text2" style="position: absolute; top: 1910px; left: 0px;">
+        <h5>
+            <a href="{{ url_for('contact_us') }}" class='link' style="text-decoration: none; color: inherit; color: #5358ff;">
+                Contact us
+            </a>
+        </h5>
+    </div>
+
+    <div class="highlighted-text2" style="position: absolute; top: 1960px; left: 0px;">
+        <h5>
+            <a href="https://www.example.com" class='link' style="text-decoration: none; color: inherit; color: #5358ff;">
+                Protect
+            </a>
+        </h5>
+    </div>
+
+    <div class="highlighted-text" style="position: absolute; top: 1860px; left: 250px;">
+        <h5>
+            Founded: 01.02.2025
+        </h5>
+    </div>
+
+    <div class="highlighted-text" style="position: absolute; top: 1910px; left: 250px;">
+        <h5>
+            Developer: Maximus.
+        </h5>
+    </div>
+    <div class="background-overlay2" style="top: 1850px; left: -50px; width: 550px; height: 175px; animation: none; background-color: #333333;"></div>
+
+<footer class="footer" id="footer" style="position: absolute; top: 2150px; left: -100px; width: 1500px; height: 100px; background-color: black; z-index: 0;">
+</footer>
+
+<div style="position: absolute; border-top: 2px solid white; width: 1500px; top: 2149px; left: -100px;"></div>
+<div style="position: absolute; border-left: 2px solid white; height: 175px; top: 1850px; left: 200px; z-index: 30;"></div>
+
+
+<div class="background-main" id="BgMain" style="top:0px; left: -80px; width: 700px; height: 700px;"></div>
+<div style="position: absolute; border-top: 2px solid white; width: 1500px; top: 697px; left: -100px;"></div>
+
+<div class="background3-main" id="BgMain2" style="top:400px; left: -70px; width: 650px; height: 200px;"></div>
+
+<div class="highlighted-text" style="top:200px; left: -50px; max-width: 600px;">
+    <p>
+        <h5>Наша команда професіоналів має багаторічний досвід у
+         сфері міжнародних автоперевезень, що гарантує безпеку та якість кожного перевезення.
+        З нами ваш автомобіль буде доставлений вчасно і в ідеальному стані. Ми дбаємо про те, щоб ви отримали найкращий сервіс та максимальну зручність під час всього процесу. Дякуємо, що обираєте нас!
+        Готові доставити ваш автомобіль швидко і надійно! 🚗🔧📦</h5>
+    </p>
+</div>
+
+<div class="background3-main" id="BgMain3" style="top:550px; left: -70px; width: 650px; height: 110px;"></div>
+<div class="highlighted-text" style="top:430px; left: -50px; max-width: 600px;">
+    <p>
+        <h5>На нашому сайті ви зможете замовити доставку своєї машини. А також ви можете замовити машину з США(для цього перейдіт по кнопці Order car)</h5>
+    </p>
+</div>
+
+<button onclick="window.location.href='{{ url_for('order') }}'" type="button" id="orderButton" class="rainbow-button2" style="position: absolute; top:580px; left:100px; width:150px; height:60px; z-index: 30;">
+    <img src="{{ url_for('static', filename='image/var2_car.png') }}" alt="Icon" class="icon" style="width: 32px; height: 42px;"> Order delivery
+</button>
+
+<button onclick="window.location.href='{{ url_for('order') }}'" type="button" id="orderButton" class="rainbow-button2" style="position: absolute; top:580px; left:400px; width:150px; height:60px; z-index: 30;">
+    <img src="{{ url_for('static', filename='image/var2_car.png') }}" alt="Icon" class="icon" style="width: 32px; height: 42px;"> Order car
+</button>
+
+<div class="highlighted-text" style="top:830px; left: -50px; max-width: 1200px;">
+    <p>
+        <h5>Ми розуміємо, як важливо знайти надійний сервіс для транспортування вашого автомобіля з-за кордону. Наша компанія спеціалізується на доставці транспортних засобів з Литви та Польщі. Ми забезпечуємо повну безпеку та своєчасну доставку автомобілів до вашого дому.
+            Чому обирають нас:
+        </h5>
+    </p>
+</div>
+<!-- Номер 1 -->
+<div class="background2-main" id="BgMain4"></div>
+<div class="gradient-border" id="liniy-1-1"></div>
+<div class="hidden-text-main" id="mainText1" style="left: -20px; top: 1030px;">
+    <h4>Надійність: Використання сучасних транспортних засобів та платформ.</h4>
+</div>
+<div class="gradient-border" id="liniy-1-2"></div>
+<!-- Номер 2 -->
+<div class="background2-main" id="BgMain5"></div>
+<div class="gradient-border" id="liniy-2-1"></div>
+<div class="hidden-text-main" id="mainText2" style="left: 480px; top: 1030px;">
+    <h4>Професіоналізм: Команда з багаторічним досвідом у галузі перевезень.</h4>
+</div>
+<div class="gradient-border" id="liniy-2-2"></div>
+<!-- Номер 3 -->
+<div class="background2-main" id="BgMain6"></div>
+<div class="gradient-border" id="liniy-3-1"></div>
+<div class="hidden-text-main" id="mainText3" style="left: 990px; top: 1030px;">
+    <h4>Гарантія: Повна відповідальність за безпеку вашого автомобіля під час транспортування.</h4>
+</div>
+<div class="gradient-border" id="liniy-3-2"></div>
+<!-- Номер 4 -->
+<div class="background4-main" id="BgMain7" style="top: 1260px; left: -50px; width: 430px; height: 180px;"></div>
+<div class="gradient-border2" id="liniy-4-1"></div>
+<div class="hidden-text-main" id="mainText4" style="left: -20px; top: 1290px;">
+    <h4>Доступні ціни: Конкурентні тарифи та спеціальні пропозиції для постійних клієнтів.</h4>
+</div>
+<div class="gradient-border" id="liniy-4-2"></div>
+<!-- Номер 5 -->
+<div class="background4-main" id="BgMain8" style="top: 1260px; left: 450px; width: 430px; height: 180px;"></div>
+<div class="gradient-border2" id="liniy-5-1"></div>
+<div class="hidden-text-main" id="mainText5" style="left: 480px; top: 1290px;">
+    <h4>Підтримка: Дружня та професійна підтримка на кожному етапі перевезення.</h4>
+</div>
+<div class="gradient-border" id="liniy-5-2"></div>
+<!-- Номер 6 -->
+<div class="background4-main" id="BgMain9" style="top: 1260px; left: 950px; width: 430px; height: 180px;"></div>
+<div class="gradient-border2" id="liniy-6-1"></div>
+<div class="hidden-text-main" id="mainText6" style="left: 990px; top: 1290px;">
+    <h4>Тут ви можете переглянути форму замовлення <a href="https://www.example.com" class="link" style="text-decoration: none; color: inherit; color: #5358ff;"><i>доставки</i></a> або купівлі <a href="https://www.example.com" class="link" style="text-decoration: none; color: inherit; color: #5358ff;"><i>автомобіля</i></a>.</h4>
+</div>
+
+<div class="gradient-border" id="liniy-6-2"></div>
+
+<div class="highlighted-text" style="top: 1470px; left: -50px; max-width: 1200px;">
+    <h4>
+        Якщо ви хочете дізнатися більше про <a onclick="window.location.href='{{ url_for('details') }}'" class="link" style="text-decoration: none; color: inherit; color: #5358ff;"><i>доставку авто з Литви</i></a>, або про покупку <a href="https://www.example.com" class='link' style="text-decoration: none; color: inherit; color: #5358ff;"><i>авто з Америки</i></a>.
+    </h4>
+</div>
+
+<div class="highlighted-text" style="top: 1540px; left: -50px; max-width: 1200px;">
+    <h4>
+        Замовляйте перевезення вашого автомобіля з Литви та Польщі вже сьогодні та будьте впевнені у його безпеці. Ми здійснюємо доставку в Україну в Львівську область. Зв'яжіться з нами для детальної консультації та дізнайтеся більше про наші послуги
+    </h4>
+</div>
+
+<div class="dropdown" style="position: fixed; top: 640px; left: 1380px;">
+    <button class="dropbtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+            <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+            <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+        </svg>
+    </button>
+    <div class="dropdown-content">
+        <a href="#" style="padding: 10px;" id="lightTheme">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+          </svg><label>Light</label></a>
+
+        <a href="#" style="padding: 10px;" id="darkTheme">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-moon-stars" viewBox="0 0 16 16">
+            <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+          </svg><label style="left: 70px;">Dark</label></a>
+
+        <a href="#" style="padding: 10px;" id="autoTheme">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"/>
+          </svg><label style="left: 70px;">Auto</label></a>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+{% endblock %}

@@ -1,0 +1,1188 @@
+                                /*! Закріплення верхнього блоку HEADER, HEADER_IMAGE */
+header {
+    position: fixed;
+    width: 100%; /* Займає всю ширину екрану */
+    padding: 10px;
+    top: 0;
+    z-index: 900;
+    background-color: #e0e0e0;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15); /* Початкова тіньова лінія */
+}
+
+.header__image {
+    height: 64px;
+    width: 73px;
+    margin-left: 50px;
+}
+
+.header__image2 {
+    height: 42px;
+    width: 42px;
+}
+
+.header__image3 {
+    height: 42px;
+    width: 42px;
+}
+
+.header__image4 {
+    height: 42px;
+    width: 48px;
+}
+
+.container {
+    position: relative;
+}
+
+.header__image1_login {
+    position: absolute;
+    top: 225px;
+    left: 135px;
+    height: 280px;
+    width: 60px;
+}
+
+.header__image2_login {
+    position: absolute;
+    top: 80px;
+    left: 250px;
+    height: 170px;
+    width: 240px;
+}
+
+
+.header__image_register{
+    margin-top:-660px;
+    margin-left: 300px;
+    height: 160px;
+    width: 240px;
+}
+
+
+                                                        /*! TEXT COUNTEINER, BODY */
+.text-container {
+    position: absolute;
+    z-index: 10; /* встановлення порядку накладання */
+    max-width: 1200px; /* Максимальна ширина контейнера */
+    word-wrap: break-word; /* Автоматичний перенос слів */
+    background-color: rgba(0, 51, 102, 0.7); /* Напівпрозорий чорний фон */
+    padding: 10px; /* Відступи всередині контейнера */
+    border-radius: 18px; /* Закруглені кути */
+}
+ 
+.parent-container {
+    position: relative; /* обов'язково для батьківського елемента */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.text-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    word-wrap: break-word; /* Додаємо автоматичне перенесення слів */
+    overflow-wrap: break-word; /* Додаємо автоматичне перенесення слів */
+    white-space: normal; /* Додаємо нормальне перенесення рядків */
+}
+
+                                                        /*! BUTTON COUNTAINER*/
+.button-container {
+    display: flex; 
+    gap: 40px;
+    justify-content: flex-start;
+    margin-top: 20px; 
+    position: relative;
+}
+                                                        
+.button {
+    background-color: #008CBA; 
+    border: none;
+    color: white; 
+    padding: 15px 25px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 4px #999; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Додаємо плавний перехід для кількох властивостей */
+}                                          
+    
+    /* Міняє колір кнопки при наведенні на неї */
+.button:hover {
+    background-color: #005f73; /* Зміна кольору при наведенні */
+    box-shadow: 0 4px #555; /* Зміна тіні при наведенні */
+    transform: translateY(-4px); /* Легкий підйом при наведенні */
+    }
+    
+/* Створює ефект натискання на кнопку */
+.button:active {
+    background-color: #005f73;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px); /* Легкий ефект натискання */
+}
+    
+.button-container2 {
+    display: flex; /* Вирівнює кнопки в рядок */
+    gap: 70px; /* Відступ між кнопками */
+}
+                                                        
+    /* Створення кнопок щоб можна було потім міняти їм тему */
+.button1_order_now {
+    margin-top: 600px; /* Координата Y для першої кнопки */
+    margin-left: 120px; /* Відстань від лівого краю контейнера */
+}
+    
+.button1_details {
+    margin-top: 600px; /* Координата Y для другої кнопки */
+    margin-left: 10px; /* Відстань від лівого краю контейнера */
+}
+    
+.button1_register_contine {
+    width: 120px;
+    height: 40px;
+    margin-top: -30px;
+    margin-left: 10px;
+}
+    
+.button1_register_cancel {
+    width: 120px;
+    height: 50px;
+    margin-top: -10px;
+    margin-left: 40px;
+}
+    
+.button1_login_contine {
+    width: 150px;
+    height: 50px;
+}
+ 
+.button1_login_cancel {
+    width: 120px;
+    height: 50px;
+}
+                                                        
+/*Кінець розташувань для кнопок*/
+
+
+
+
+                                            /*! ROTATE-BUTTON */
+
+.rotate-button {
+    width: 100px;
+    height: 100px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 50%; /* Робить кнопку круглою */
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed; /* Фіксоване позиціонування */
+    right: 20px; /* Відступ від правого краю */
+    bottom: 20px; /* Відступ від нижнього краю */
+    transition: transform 0.5s ease; /* Анімація обертання */
+    z-index: 1000;
+}
+
+.rotated {
+    transform: rotate(180deg); /* Обертання на 180 градусів */
+}
+
+
+                            /*! BACKGROUND ЗАКРІПЛЕННЯ І ДОДАВАННЯ НА ЗАДНІЙ ФОН ЗОБРАЖЕННЯ */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #cfe3ff;
+    height: 100%;
+    overflow: auto; /* Змінили з hidden на auto */
+}
+
+@keyframes colorShift {
+    0% {
+        filter: grayscale(0%);
+    }
+    50% {
+        filter: grayscale(100%);
+    }
+    100% {
+        filter: grayscale(0%);
+    }
+}
+
+
+.background {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 45%; /* Ширина половини екрану */
+    height: 100%;
+    background-color: #cfe3ff; /* Колір фону */
+    background-image: url('bmwm5.jpg'); /* Замініть на URL вашого зображення */
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 55% 55%; /* Закруглення верхнього лівого кута */
+    border-bottom-left-radius: 55% 55%; /* Закруглення нижнього лівого кута */
+    z-index: -1;
+    animation: colorShift 10s infinite; /* Розміщення на задньому плані */
+}
+
+
+ /*! TEXT COUNTEINER, BODY */
+
+
+ .text-container_2 {
+    position: relative; /* Відносне позиціонування контейнера */
+    width: 100%;
+    height: 400px; /* Висота контейнера, налаштуйте за потребою */
+}
+
+
+.highlighted-text {
+    position: absolute; /* Абсолютне позиціонування заголовка */
+    top: 400px;  /* Відстань від верхнього краю контейнера */
+    left: 100px;  /* Відстань від лівого краю контейнера */
+    /*background-color: yellow;  Колір фону */
+    padding: 10px; /* Відступи всередині елемента */
+    border-radius: 5px; /* Закруглені кути */
+    z-index: 10;
+}
+
+.highlighted-text1 {
+    position: absolute; /* Абсолютне позиціонування заголовка */
+    top: 400px;  /* Відстань від верхнього краю контейнера */
+    left: 100px;  /* Відстань від лівого краю контейнера */
+    /*background-color: yellow;  Колір фону */
+    padding: 10px; /* Відступи всередині елемента */
+    border-radius: 5px; /* Закруглені кути */
+    z-index: 10;
+}
+
+/*Такий самий текст але який піднімається при наведенні*/
+.highlighted-text2 {
+    position: absolute; /* Абсолютне позиціонування заголовка */
+    top: 400px;  /* Відстань від верхнього краю контейнера */
+    left: 100px;  /* Відстань від лівого краю контейнера */
+    /*background-color: yellow;  Колір фону */
+    padding: 10px; /* Відступи всередині елемента */
+    border-radius: 5px; /* Закруглені кути */
+    z-index: 10;
+    transition: transform 0.3s linear;
+}
+
+.highlighted-text2:hover {
+    transform: translateY(-5px); /* Легкий ефект підйому при наведенні миші */
+    color: #5358ff;
+}
+
+@keyframes colorShift2 {
+    0% {
+        filter: grayscale(0%);
+    }
+    50% {
+        filter: grayscale(100%);
+    }
+    100% {
+        filter: grayscale(0%);
+    }
+}
+
+.background-overlay {
+    position: absolute; /* Абсолютне позиціонування */
+    width: 100%;  /* Ширина 100% */
+    height: 200px; /* Висота 100% */
+    background: linear-gradient(to bottom left, black, gray); /* Градієнт від чорного до сірого, з верхнього лівого до нижнього правого */
+    z-index: -1; /* Розташування за іншими елементами */
+    border-radius: 30px; /* Закруглені кути */
+    animation: colorShift2 5s infinite; /* Анімація переливання чорно-білим */
+    opacity: 0.8; /* Встановлюємо прозорість на 50% */
+}
+
+.background-overlay2 {
+    position: absolute; /* Абсолютне позиціонування */
+    width: 100%;  /* Ширина 100% */
+    height: 200px; /* Висота 100% */
+    background: rgba(0, 51, 102, 0.7); /* Градієнт від чорного до сірого, з верхнього лівого до нижнього правого */
+    z-index: -1; /* Розташування за іншими елементами */
+    border-radius: 30px; /* Закруглені кути */
+    animation: colorShift2 5s infinite; /* Анімація переливання чорно-білим */
+    opacity: 0.8; /* Встановлюємо прозорість на 50% */
+}
+
+/* Анімація для кнопки */
+@keyframes grayscale {
+    0% {background-color: gray;}
+    25% {background-color: black;}
+    50% {background-color: gray;}
+    100% {background-color: black;}
+}
+
+/* Створює ефект натискання на кнопку */
+.button:active {
+    background-color: #005f73;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px); /* Легкий ефект натискання */
+}
+
+.form-control {
+    padding: 10px; /* Внутрішні відступи */
+    border: 2px solid #ccc; /* Початковий колір рамки */
+    border-radius: 5px; /* Закруглені кути */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Плавний перехід */
+}
+
+.form-control:focus {
+    border-color: #66afe9; /* Колір рамки при фокусуванні */
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5); /* Підсвічування рамки */
+    outline: none; /* Вимкнення стандартного контуру */
+}
+
+
+
+/* Анімація градієнта */
+@keyframes grayscale {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Анімація висування фото */
+@keyframes slideIn {
+    from { left: -30px; opacity: 0; }
+    to { left: 10px; opacity: 1; }
+}
+
+/* Анімація ховання фото */
+@keyframes slideOut {
+    from { left: 10px; opacity: 1; }
+    to { left: -30px; opacity: 0; }
+}
+/* Створення 1 типу кнопки з виїздною картинкою до кнопки  для кнопки Order now(main page)*/
+.rainbow-button {
+    background: linear-gradient(270deg, #000000, #333333, #000066);
+    background-size: 200% 200%;
+    animation: grayscale 3s ease infinite; /* Анімація градієнта */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    position: relative; /* Додано для коректного позиціонування псевдоелементів */
+    overflow: hidden;
+}
+
+.rainbow-button .icon {
+    position: absolute;
+    top: 50%;
+    left: -20px; /* Початкове розташування за межами кнопки */
+    transform: translateY(-50%);
+    transition: all 200ms ease;
+}
+
+.rainbow-button:hover .icon {
+    animation: slideIn 0.5s forwards; /* Анімація висування фото зліва направо */
+}
+
+.rainbow-button:not(:hover) .icon {
+    animation: slideOut 0.5s forwards; /* Анімація ховання фото при виході курсора */
+}
+
+.rainbow-button:hover {
+    transform: scale(1.1);
+}
+/* Створення 2 типу кнопки з виїздною картинкою до кнопки для кнопки Detail(main page) */
+.rainbow-button2 {
+    background: linear-gradient(270deg, #000000, #333333, #000066);
+    background-size: 200% 200%;
+    animation: grayscale 3s ease infinite; /* Анімація градієнта */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    position: relative; /* Додано для коректного позиціонування псевдоелементів */
+    overflow: hidden;
+}
+
+.rainbow-button2 .icon {
+    position: absolute;
+    top: 50%;
+    margin-left: -10px;
+    transform: translateY(-50%);
+    transition: all 200ms ease;
+}
+
+.rainbow-button2:hover .icon {
+    animation: slideIn 0.7s forwards; /* Анімація висування фото зліва направо */
+}
+
+.rainbow-button2:not(:hover) .icon {
+    animation: slideOut 0.7s forwards; /* Анімація ховання фото при виході курсора */
+}
+
+.rainbow-button2:hover {
+    transform: scale(1.1);
+}
+
+/* Створення 3 типу кнопки з виїздною картинкою до кнопки для кнопки Order!(Order delivery page)*/
+.rainbow-button3 {
+    background: linear-gradient(270deg, #000000, #333333, #000066);
+    background-size: 200% 200%;
+    animation: grayscale 3s ease infinite; /* Анімація градієнта */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    position: relative; /* Додано для коректного позиціонування псевдоелементів */
+    overflow: hidden;
+}
+
+.rainbow-button3 .icon {
+    position: absolute;
+    top: 50%;
+    margin-left: -15px;
+    transform: translateY(-50%);
+    transition: all 200ms ease;
+}
+
+.rainbow-button3:hover .icon {
+    animation: slideIn 0.7s forwards; /* Анімація висування фото зліва направо */
+}
+
+.rainbow-button3:not(:hover) .icon {
+    animation: slideOut 0.7s forwards; /* Анімація ховання фото при виході курсора */
+}
+
+.rainbow-button3:hover {
+    transform: scale(1.1);
+}
+.rainbow-button3:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+/* Створення 3 типу кнопки з виїздною картинкою до кнопки для кнопки Edit profile(user page)*/
+.rainbow-button4 {
+    background: linear-gradient(270deg, #000000, #333333, #000066);
+    background-size: 200% 200%;
+    animation: grayscale 3s ease infinite; /* Анімація градієнта */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    position: relative; /* Додано для коректного позиціонування псевдоелементів */
+    overflow: hidden;
+}
+
+.rainbow-button4 .icon {
+    position: absolute;
+    top: 50%;
+    margin-left: -13px;
+    transform: translateY(-50%);
+    transition: all 200ms ease;
+}
+
+.rainbow-button4:hover .icon {
+    animation: slideIn 0.7s forwards; /* Анімація висування фото зліва направо */
+}
+
+.rainbow-button4:not(:hover) .icon {
+    animation: slideOut 0.7s forwards; /* Анімація ховання фото при виході курсора */
+}
+
+.rainbow-button4:hover {
+    transform: scale(1.1);
+}
+
+/* Створення 3 типу кнопки з виїздною картинкою до кнопки для кнопки History order(user page)*/
+.rainbow-button5 {
+    background: linear-gradient(270deg, #000000, #333333, #000066);
+    background-size: 200% 200%;
+    animation: grayscale 3s ease infinite; /* Анімація градієнта */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    position: relative; /* Додано для коректного позиціонування псевдоелементів */
+    overflow: hidden;
+}
+
+.rainbow-button5 .icon {
+    position: absolute;
+    top: 50%;
+    margin-left: -15px;
+    transform: translateY(-50%);
+    transition: all 200ms ease;
+}
+
+.rainbow-button5:hover .icon {
+    animation: slideIn 0.7s forwards; /* Анімація висування фото зліва направо */
+}
+
+.rainbow-button5:not(:hover) .icon {
+    animation: slideOut 0.7s forwards; /* Анімація ховання фото при виході курсора */
+}
+
+.rainbow-button5:hover {
+    transform: scale(1.1);
+}
+
+/* Створення 3 типу кнопки з виїздною картинкою до кнопки для кнопки Save changes(edit profile page)*/
+.rainbow-button6 {
+    background: linear-gradient(270deg, #000000, #333333, #000066);
+    background-size: 200% 200%;
+    animation: grayscale 3s ease infinite; /* Анімація градієнта */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    position: relative; /* Додано для коректного позиціонування псевдоелементів */
+    overflow: hidden;
+}
+
+.rainbow-button6 .icon {
+    position: absolute;
+    top: 50%;
+    margin-left: -15px;
+    transform: translateY(-50%);
+    transition: all 200ms ease;
+}
+
+.rainbow-button6:hover .icon {
+    animation: slideIn 0.7s forwards; /* Анімація висування фото зліва направо */
+}
+
+.rainbow-button6:not(:hover) .icon {
+    animation: slideOut 0.7s forwards; /* Анімація ховання фото при виході курсора */
+}
+
+.rainbow-button6:hover {
+    transform: scale(1.1);
+}
+
+/* Створення 3 типу кнопки яка при наведенні припіднімається вгору */
+.rainbow-button0 {
+    animation: grayscale 3s infinite; /* Анімація з тривалістю 3 секунд, що повторюється безкінечно */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+.rainbow-button0:hover {
+    transform: translateY(-8px);
+}
+
+
+.form-control2 {
+    width: 375px; /* Ширина поля для введення */
+    height: 140px; /* Висота поля для введення */
+    padding: 10px; /* Внутрішні відступи */
+    border: 2px solid #ccc; /* Початковий колір рамки */
+    border-radius: 5px; /* Закруглені кути */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Плавний перехід */
+}
+
+.form-control2:focus {
+    border-color: #66afe9; /* Колір рамки при фокусуванні */
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5); /* Підсвічування рамки */
+    outline: none; /* Вимкнення стандартного контуру */
+}
+/* Для того щоб приймати від користувача текст тобто що бракує сайту */
+.form-control3 {
+    padding-top: -30px; /* Відступ зверху для розміщення тексту у верхньому куті */
+    padding-left: 0px; /* Відступ зліва для розміщення тексту у лівому куті */
+    box-sizing: border-box; /* Включення відступів у загальний розмір елемента */
+    width: 100%; /* Ширина поля вводу */
+    height: 100px; /* Висота поля вводу (можна змінити відповідно до ваших потреб) */
+    resize: none; /* Забороняє зміну розмірів поля вводу */
+    border-radius: 5px;
+    transition: width 0.3s ease;
+    z-index: 10;
+}
+
+
+.form-control3:focus {
+    border-color: #66afe9; /* Колір рамки при фокусуванні */
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5); /* Підсвічування рамки */
+    outline: none; /* Вимкнення стандартного контуру */
+}
+
+
+/*Створення горизонтальної лінії*/
+.horizontal-line {
+    width: 100px;
+    background-color: black;
+    height: 1%; 
+}
+
+.horizontal-line {
+    width: 100px;
+    background-color: black;
+    height: 1%; 
+}
+
+.link { 
+    text-decoration: none;
+    color: #5358ff;
+    transition: transform 0.2s;
+ }
+
+.link:hover {
+    transform: translateY(-4px);
+ }
+
+ /* Клас для профільного зображення */
+.profile-pic {
+    width: 128px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* Клас для кнопки редагування поки не використовується*/
+.edit-button {
+    width: 80px;
+    height: 40px;
+    z-index: 1000;
+    position: relative; /* Додано позиціонування */
+    background-color: #008CBA; /* Колір фону кнопки */
+    color: white; /* Колір тексту */
+    border: none;
+    border-radius: 5px; /* Закруглені кути */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.edit-button:hover {
+    transform: scale(1.1); /* Ефект збільшення при наведенні */
+}
+
+
+
+/* Анімація кольорового переливання для кнопки */
+@keyframes colorShift3 {
+    0% {background-color: #a8dadc;}  /* Light Blue */
+    25% {background-color: #457b9d;} /* Steel Blue */
+    50% {background-color: #1d3557;} /* Dark Blue */
+    75% {background-color: #457b9d;} /* Steel Blue */
+    100% {background-color: #a8dadc;} /* Light Blue */
+}
+
+
+.counter {
+    display: flex;
+    align-items: center;
+}
+.counter input[type="number"] {
+    width: 50px;
+    text-align: center;
+}
+.counter span {
+    margin-left: 10px;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 999;
+}
+.popup.active {
+    display: block;
+}
+
+
+.hidden-text {/*НЕ забути*/
+    opacity: 0;
+    transform: translateX(-100%); /* Початкове положення зліва за межами вікна */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    position: absolute;
+    top: 1200px; /* Координата, де текст буде з'являтися */
+    left: 0;
+    width: 80%;
+    background-color: #008CBA;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0); /* Кінцеве положення всередині вікна */
+}
+
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-slide {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: left 0.5s ease-in-out;
+}
+
+.image-container:hover .image-slide {
+    left: 0; /* Зображення випливає зліва направо при наведенні */
+}
+
+
+
+.image-container2 {
+    opacity: 0.8;
+    position: relative;
+    width: 114.3%;
+    height: 700px;
+    overflow: hidden;
+    margin-left: -93px;
+    margin-top: 87px;
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transform: translateX(100%);
+    transition: transform 2.5s;
+}
+
+.image.show {
+    transform: translateX(0);
+}
+
+.image.hide {
+    opacity: 0.7;
+    transform: translateX(200%);
+}
+
+
+.background-main {
+    position: absolute; /* Абсолютне позиціонування */
+    width: 100%;  /* Ширина 100% */
+    height: 200px; /* Висота 100% */
+    background: black;/* Градієнт від чорного до сірого, з верхнього лівого до нижнього правого */
+    z-index: 1; /* Розташування за іншими елементами */
+    animation: colorShift2 5s infinite; /* Анімація переливання чорно-білим */
+    opacity: 0.4; /* Встановлюємо прозорість на 50% */
+}
+
+.background3-main {
+    top: 1200px;
+    position: absolute; /* Абсолютне позиціонування */
+    opacity: 0;
+    transform: translateY(-100%); /* Початкове положення зліва за межами вікна */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    width: 100%;  /* Ширина 100% */
+    height: 200px; /* Висота 100% */
+    background: black;/* Градієнт від чорного до сірого, з верхнього лівого до нижнього правого */
+    z-index: 1; /* Розташування за іншими елементами */
+    border-radius: 30px;
+    opacity: 0.4; /* Встановлюємо прозорість на 50% */
+}
+
+
+.gradient-border {
+    top: 1200px;
+    opacity: 0;
+    transform: translateY(-100%); /* Початкове положення зліва за межами вікна */
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+    position: absolute;
+
+    z-index: 30;
+}
+
+.gradient-border::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(122deg, #79C9FF, #C3643B);
+}
+
+.gradient-border2 {
+    top: 1300px;
+    opacity: 0;
+    transform: translateY(-100%); /* Початкове положення зліва за межами вікна */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    position: absolute;
+    z-index: 30;
+}
+
+.gradient-border2::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(122deg, #79C9FF, #C3643B);
+}
+
+.text1 {
+    position: absolute; /* Абсолютне позиціонування заголовка */
+    padding: 10px; /* Відступи всередині елемента */
+    border-radius: 5px; /* Закруглені кути */
+    z-index: 10;
+}
+
+.hidden-text-main {/*НЕ забути*/
+    opacity: 0;
+    transform: translateY(-100%); /* Початкове положення зліва за межами вікна */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    position: absolute;
+    top: 1200px; /* Координата, де текст буде з'являтися */
+    left: -50;
+    width: 80%;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    z-index: 30;
+}
+.hidden-text2-main {/*НЕ забути*/
+    opacity: 0;
+    transform: translateY(-100%); /* Початкове положення зліва за межами вікна */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    position: absolute;
+    top: 1500px; /* Координата, де текст буде з'являтися */
+    left: -50;
+    width: 80%;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    z-index: 50;
+}
+
+.background2-main,
+        .background4-main {
+            position: absolute;
+            opacity: 0;
+            transform: translateY(-100%);
+            transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+            width: 100%;
+            height: 200px;
+            background: black;
+            z-index: 1;
+            border-radius: 30px;
+            border-color: None;
+            border: None;
+            opacity: 0.1;
+        }
+
+        .gradient-border,
+        .gradient-border2 {
+            position: absolute;
+            width: 5px;
+            height: 174px;
+            background: linear-gradient(to bottom, #79C9FF, #C3643B);
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        /* Індивідуальні позиції */
+        #BgMain4 { top: 1020px; left: -50px; width: 430px; height: 180px; }
+        #BgMain5 { top: 1020px; left: 450px; width: 430px; height: 180px; }
+        #BgMain6 { top: 1020px; left: 950px; width: 430px; height: 180px; }
+        #liniy-1-1 { top: 1023px; left: -25px; }
+        #liniy-1-2 { top: 1023px; left: 350px; }
+        #liniy-2-1 { top: 1023px; left: 475px; }
+        #liniy-2-2 { top: 1023px; left: 1350px; }
+        #liniy-3-1 { top: 1023px; left: 975px; }
+        #liniy-3-2 { top: 1023px; left: 850px; }
+        #liniy-4-1 { top: 1262px; left: -25px; }
+        #liniy-4-2 { top: 1262px; left: 350px; }
+        #liniy-5-1 { top: 1262px; left: 475px; }
+        #liniy-5-2 { top: 1262px; left: 850px; }
+        #liniy-6-1 { top: 1262px; left: 975px; }
+        #liniy-6-2 { top: 1262px; left: 1350px; }
+        .hidden-text-main,
+        .highlighted-text {
+            position: absolute;
+            max-width: 370px;
+        }
+
+
+.background1-main-number {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background: #fd5d0e;
+    transform: translateY(-100%);
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+    z-index: 10;
+    border-radius: 100px;
+    opacity: 0.7;  
+}
+
+.background2-main-cube {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    transform: translateY(-100%);
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+    background: #fd5d0e;
+    z-index: 10;
+    border-radius: 0px;
+    opacity: 0.7;  
+}
+
+.background2-main-cube-add {
+    position: absolute;
+    transform: translateY(-100%);
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+    width: 100%;
+    height: 200px;
+    background: black;
+    z-index: 1;
+    border-radius: 0px;
+    opacity: 0.1;
+}
+
+.hidden-text-swap-right {/*НЕ забути*/
+    opacity: 0;
+    transform: translateX(-100%); /* Початкове положення зліва за межами вікна */
+    transition: opacity 1.3s ease-in-out, transform 1s ease-in-out;
+    position: absolute;
+    top: 1200px; /* Координата, де текст буде з'являтися */
+    left: -50;
+    width: 80%;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    z-index: 30;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.glow {
+    display: inline-block;
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: box-shadow 0.5s ease-in-out;
+    top: 100%;
+}
+
+.glow:hover {
+    box-shadow: 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00; /* Сяйво зеленого кольору */
+}
+
+.wave-text {
+    display: inline-block;
+    color: #000;
+    font-size: 36px;
+    position: relative;
+    overflow: hidden;
+}
+
+.wave-text::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.wave-text:hover::after {
+    transform: translateX(0);
+}
+
+.wave-text span {
+    display: inline-block;
+    transition: transform 0.5s ease-in-out;
+}
+
+.wave-text span:hover {
+    transform: translateY(-10px) rotate(10deg);
+}
+
+.color-stream {
+    display: inline-block;
+    background-color: #008CBA;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.color-stream::before {
+    content: '';
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    animation: colorFlow 2s infinite;
+}
+
+@keyframes colorFlow {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+table, th, td {
+    border:1px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+  }
+tr:hover {background-color: #999;}
+th:hover{background-color: #999;}
+
+.form-controll-spefical {
+    position: relative; /* Додано для коректного позиціонування */
+    width: 400px; /* Встановлено початкову ширину */
+    height: 35px; /* Встановлено початкову висоту */
+    margin-top: 10px; /* Встановлено відступ зверху */
+    transition: width 0.3s ease, height 1s ease; /* Плавний перехід ширини */
+    background-color: #555;
+    border: 1px solid;
+    border-radius: 6px;
+    font-size: 22px;
+}
+.form-controll-spefical:focus {
+    width: 500px; /* Ширина при фокусі */
+    height: 50px;
+    background-color: #333333;
+}
+
+.img-right {
+    position: absolute; /* Позиціонування зображення */
+    top: 0;
+    right: -100%; /* Вирівнювання зображення справа */
+    width: 500px;
+    height: 100%;
+    border-radius: 80% 0 0 10px; /* Закруглені кути з лівої сторони */
+    overflow: hidden; /* Приховує частини зображення поза межами заокруглених кутів */
+    z-index: 0;
+}
+.img-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sumbit-button {
+    top: 100%;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    border-radius: 6px;
+    transition: transform 1s ease;
+}
+.sumbit-button:hover {
+    transform: translateY(-8px);
+}
+.sumbit-button:active {
+    background-color: #00FF00;
+}
+
+
+.dropbtn {
+    background-color: transparent; /* Прозорий фон */
+    width: 64px;
+    height: 64px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s; /* Додаємо плавну анімацію */
+}
+
+.dropdown {
+    position: fixed;
+    display: inline-block;
+    z-index: 100;
+}
+
+.dropdown-content {
+    opacity: 0;
+    transform: translateY(10px); /* Початкове положення анімації */
+    transition: opacity 0.3s, transform 0.3s; /* Додаємо плавний перехід для видимості і трансформації */
+    position: absolute;
+    bottom: 100%; /* Розгортання вгору */
+    left: -45px;
+    background-color: #333333;
+    min-width: 40px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+    border: 1px solid #797878;
+    border-radius: 8px;
+}
+
+.dropdown-content.show {
+    opacity: 1;
+    transform: translateY(0); /* Кінцеве положення анімації */
+    z-index: 100;
+}
+.dropdown-content.hide {
+    opacity: 0;
+    transform: translateY(10px);
+    z-index: 100;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 8px;
+    background-color: #333333;
+    width: 100px;
+    z-index: 1000;
+}
+
+.dropdown-content a label {
+    color: white;
+    z-index: 1000;
+    margin-left: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #3A3A3A;
+    z-index: 100;
+}
