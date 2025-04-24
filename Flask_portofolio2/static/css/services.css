@@ -1,0 +1,570 @@
+.desktop-content {
+    display: block;
+}
+.mobile-content {
+    display: none;
+}
+
+.container-services-text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin-top: 200px;
+    margin-left: 150px;
+}
+
+.container-services-text1 .div-services-text1 {
+    color: azure;
+    font-size: 37px;
+    width: 560px;
+    margin-left: 35%;
+}
+.container-services-text1 .custom-line-services {
+    position: relative;
+    width: 100px;
+    height: 4px;
+    margin-top: 10px;
+    border: none;
+    z-index: 10;
+    margin-left: 39%;
+    background-color: #2D76E2;
+}
+.container-services-text1 .div-services-text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 18%;
+    margin-top: 10px;
+}
+.container-services-text1 .div-services-text2 .div-text1 {
+    width: 700px;
+    height: auto;
+    font-size: 18px;
+    text-align: center;
+    color: #E1E3E5;
+}
+.container-services-text1 .cards-services-coutainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    position: relative;
+    margin-top: 80px;
+    margin-left: -20px;
+}
+.container-services-text1 .cards-services-coutainer .cards {
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #151630;
+    z-index: 1;
+    transition: border 0.4s ease;
+}
+.container-services-text1 .cards-services-coutainer .cards:hover {
+    border: 1px solid #393FEE;
+    border-radius: 8px;
+}
+.container-services-text1 .cards-services-coutainer .cards .svg-bg {
+    width: 54px;
+    height: 54px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 8px;
+    background-color: #131446;
+    z-index: 2;
+}
+.container-services-text1 .cards-services-coutainer .cards .svg-bg svg {
+    width: 44px;
+    height: 44px;
+    margin-top: 5px;
+    margin-left: 5px;
+    filter: brightness(0) saturate(100%) invert(18%) sepia(99%) saturate(7487%) hue-rotate(240deg);
+}
+.container-services-text1 .cards-services-coutainer .cards .svg-bg img {
+    width: 44px;
+    height: 44px;
+    margin-top: 5px;
+    margin-left: 5px;
+    filter: brightness(0) saturate(100%) invert(18%) sepia(99%) saturate(7487%) hue-rotate(240deg);
+}
+.container-services-text1 .cards-services-coutainer .cards .name {
+    width: 270px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: azure;
+}
+.container-services-text1 .cards-services-coutainer .cards .description {
+    width: 380px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #E1E3E5;
+}
+
+.container-services-text2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px; /* Збільшити відступ, щоб не перекривало */
+    z-index: 1; /* Піднімає цей контейнер вище */
+}
+
+.container-services-text2-small-bg {
+    width: 100%;
+    height: 200px;
+    background-color: #161839;
+    position: absolute;
+    margin-top: 50px;
+    left: 0;
+    z-index: -2; /* Зменшуємо z-index, щоб кнопки залишались клікабельними */
+}
+
+.container-services-text2  .div-text-ser-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    margin-top: 50px;
+    margin-left: -75%;
+    font-size: 24px;
+    z-index: 1;
+    color: #E8E8E8;
+}
+.container-services-text2 .div-text-ser-2 {
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 135px;
+    font-size: 17px;
+    z-index: 1;
+    color: #E8E8E8;
+}
+
+.container-services-text2-icones-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 50%;
+    text-align: center;
+    z-index: 11;
+}
+.container-services-text2-icones-container .div-button-ser-1 {
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgb(26, 21, 21);
+    border-radius: 50%;
+    background-color: #1F2041;
+    color: rgb(141, 141, 141);
+    margin: 10px -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: background-color 0.3s ease-in-out;
+    margin-left: 30px;
+    z-index: 5;
+    cursor: pointer; /* Додає можливість клікати */
+}
+
+.container-services-text2-icones-container .div-button-ser-1:hover {
+    background-color: #393FEE;
+}
+
+/* Виправлення для SVG */
+.container-services-text2-icones-container .div-button-ser-1 svg {
+    margin: 0; /* Убрав margin, щоб не було зміщень */
+    pointer-events: none; /* Щоб клік проходив через зображення */
+    width: 26px;
+    height: 26px;
+}
+
+.container-services-text2-icones-container .div-button-ser-1 img {
+    margin: 0; /* Убрав margin, щоб не було зміщень */
+    pointer-events: none; /* Щоб клік проходив через зображення */
+}
+
+.container-services-text2-icones-container .div-button-ser-1 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: inherit; /* Наслідуємо колір від батьківського елемента */
+    text-decoration: none; /* Видаляємо підкреслення посилань */
+}
+
+.container-services-text2-icones-container .div-button-ser-1 svg {
+    fill: #E8E8E8; /* Білий колір іконки */
+    transition: fill 0.3s ease-in-out;
+}
+
+.container-services-text2-icones-container .div-button-ser-1:hover {
+    background-color: #393FEE; /* Синій фон при наведенні */
+}
+
+.container-services-text2-icones-container .div-button-ser-1:hover svg {
+    fill: #ffffff; /* Зберігаємо білий колір іконки при наведенні */
+}
+
+
+.custom-line-ser-2 {
+    position: relative;
+    background-color: rgb(141, 141, 141);
+    width: 87%;
+    height: 1px;
+    margin-top: 50px;
+    border: none;
+    z-index: 1000;
+    margin-left: -20px;
+}
+
+.container-services-text3 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 5% 80% 10% 10%;
+    align-items: center;
+    width: 90%;
+    margin-top: 30px; /* Збільшити відступ, щоб не перекривало */
+    z-index: 1; /* Піднімає цей контейнер вище */
+    margin-left: 10%;
+    height: 50px;
+}
+
+.container-services-text3 .div-text-ser2-1 {
+    color: azure;
+    font-size: 15px;
+    width: 560px;
+}
+.container-services-text3 .div-text-ser2-1 svg {
+    width: 12px;
+    height: 12px;
+    margin-left: -47%;
+}
+.container-services-text3 .div-text-ser2-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: azure;
+    font-size: 15px;
+    width: 450px;
+    margin-left: 700px;
+}
+.container-services-text3 .div-text-ser2-2 .div-text1 {
+    color: azure;
+    font-size: 15px;
+    width: 250px;
+}
+.container-services-text3 .div-text-ser2-2 .div-text1 a {
+    color: azure;
+    font-size: 15px;
+    width: 250px;
+    text-decoration: none;
+}
+.container-services-text3 .div-text-ser2-2 .div-text2 {
+    color: azure;
+    font-size: 15px;
+    width: 250px;
+}
+.container-services-text3 .div-text-ser2-2 .div-text2 a {
+    color: azure;
+    font-size: 15px;
+    width: 250px;
+    text-decoration: none;
+}
+
+@media (max-width: 667px) {
+    .desktop-content {
+        display: none;
+    }
+    .mobile-content {
+        display: block;
+    }
+    .container-services-text1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 410px;
+        margin-top: 150px;
+        margin-left: -20%;
+    }
+    
+    .container-services-text1 .div-services-text1 {
+        color: azure;
+        font-size: 37px;
+        width: 250px;
+        margin-left: 40%;
+    }
+    .container-services-text1 .custom-line-services {
+        position: relative;
+        width: 100px;
+        height: 4px;
+        margin-top: 10px;
+        border: none;
+        z-index: 10;
+        margin-left: 53%;
+        background-color: #2D76E2;
+    }
+    .container-services-text1 .div-services-text2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 18%;
+        margin-top: 10px;
+    }
+    .container-services-text1 .div-services-text2 .div-text1 {
+        width: 400px;
+        height: auto;
+        font-size: 18px;
+        text-align: center;
+        color: #E1E3E5;
+    }
+    .container-services-text1 .cards-services-coutainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+        position: relative;
+        margin-top: 50px;
+        margin-left: 14%;
+    }
+    .container-services-text1 .cards-services-coutainer .cards {
+        width: 400px;
+        height: 200px;
+        margin-top: 20px;
+        margin-left: 20px;
+        border: 1px solid #333;
+        border-radius: 8px;
+        background-color: #151630;
+        z-index: 1;
+        transition: border 0.4s ease;
+    }
+    .container-services-text1 .cards-services-coutainer .cards:hover {
+        border: 1px solid #393FEE;
+        border-radius: 8px;
+    }
+    .container-services-text1 .cards-services-coutainer .cards .svg-bg {
+        width: 54px;
+        height: 54px;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 8px;
+        background-color: #131446;
+        z-index: 2;
+    }
+    .container-services-text1 .cards-services-coutainer .cards .svg-bg svg {
+        width: 44px;
+        height: 44px;
+        margin-top: 5px;
+        margin-left: 5px;
+        filter: brightness(0) saturate(100%) invert(18%) sepia(99%) saturate(7487%) hue-rotate(240deg);
+    }
+    .container-services-text1 .cards-services-coutainer .cards .svg-bg img {
+        width: 44px;
+        height: 44px;
+        margin-top: 5px;
+        margin-left: 5px;
+        filter: brightness(0) saturate(100%) invert(18%) sepia(99%) saturate(7487%) hue-rotate(240deg);
+    }
+    .container-services-text1 .cards-services-coutainer .cards .name {
+        width: 270px;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-left: 10px;
+        color: azure;
+    }
+    .container-services-text1 .cards-services-coutainer .cards .description {
+        width: 380px;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-left: 10px;
+        color: #E1E3E5;
+    }        
+    .container-services-text2 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-top: 80px; /* Збільшити відступ, щоб не перекривало */
+        z-index: 1; /* Піднімає цей контейнер вище */
+    }
+    
+    .container-services-text2-small-bg {
+        width: 80%;
+        height: 200px;
+        background-color: #161839;
+        position: absolute;
+        margin-top: 50px;
+        left: 0;
+        z-index: -2; /* Зменшуємо z-index, щоб кнопки залишались клікабельними */
+    }
+    
+    .container-services-text2  .div-text-ser-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: auto;
+        margin-top: -50px;
+        margin-left: -40%;
+        font-size: 24px;
+        z-index: 1;
+        color: #E8E8E8;
+    }
+    .container-services-text2 .div-text-ser-2 {
+        width: 350px;
+        margin-top: 10px;
+        margin-left: 9%;
+        font-size: 17px;
+        z-index: 1;
+        color: #E8E8E8;
+    }
+    
+    .container-services-text2-icones-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 40px;
+        margin-left: 20%;
+        text-align: center;
+        z-index: 11;
+    }
+    .container-services-text2-icones-container .div-button-ser-1 {
+        width: 42px;
+        height: 42px;
+        border: 1px solid rgb(26, 21, 21);
+        border-radius: 50%;
+        background-color: #1F2041;
+        color: rgb(141, 141, 141);
+        margin: 10px -20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        transition: background-color 0.3s ease-in-out;
+        margin-left: 30px;
+        z-index: 5;
+        cursor: pointer; /* Додає можливість клікати */
+    }
+    
+    .container-services-text2-icones-container .div-button-ser-1:hover {
+        background-color: #393FEE;
+    }
+    
+    /* Виправлення для SVG */
+    .container-services-text2-icones-container .div-button-ser-1 svg {
+        margin: 0; /* Убрав margin, щоб не було зміщень */
+        pointer-events: none; /* Щоб клік проходив через зображення */
+        width: 26px;
+        height: 26px;
+    }
+    
+    .container-services-text2-icones-container .div-button-ser-1 img {
+        margin: 0; /* Убрав margin, щоб не було зміщень */
+        pointer-events: none; /* Щоб клік проходив через зображення */
+    }
+    
+    .container-services-text2-icones-container .div-button-ser-1 a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        color: inherit; /* Наслідуємо колір від батьківського елемента */
+        text-decoration: none; /* Видаляємо підкреслення посилань */
+    }
+    
+    .container-services-text2-icones-container .div-button-ser-1 svg {
+        fill: #E8E8E8; /* Білий колір іконки */
+        transition: fill 0.3s ease-in-out;
+    }
+    
+    .container-services-text2-icones-container .div-button-ser-1:hover {
+        background-color: #393FEE; /* Синій фон при наведенні */
+    }
+    
+    .container-services-text2-icones-container .div-button-ser-1:hover svg {
+        fill: #ffffff; /* Зберігаємо білий колір іконки при наведенні */
+    }
+    
+    
+    .custom-line-ser-2 {
+        position: relative;
+        background-color: rgb(141, 141, 141);
+        width: 110%;
+        height: 1px;
+        margin-top: 20px;
+        border: none;
+        z-index: 1000;
+        margin-left: 105px;
+    }
+    
+    .container-services-text3 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin-top: 30px; /* Збільшити відступ, щоб не перекривало */
+        z-index: 1; /* Піднімає цей контейнер вище */
+        margin-left: 20%;
+        height: 50px;
+    }
+    
+    .container-services-text3 .div-text-ser2-1 {
+        color: azure;
+        font-size: 15px;
+        width: 300px;
+    }
+    .container-services-text3 .div-text-ser2-1 svg {
+        width: 12px;
+        height: 12px;
+        margin-left: -87%;
+    }
+    .container-services-text3 .div-text-ser2-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: azure;
+        font-size: 15px;
+        width: 150px;
+        margin-left: 0px;
+    }
+    .container-services-text3 .div-text-ser2-2 .div-text1 {
+        color: azure;
+        font-size: 15px;
+        width: 150px;
+        margin-top: -15%;
+        margin-left: -53%;
+        padding: 50px;
+    }
+    .container-services-text3 .div-text-ser2-2 .div-text1 a {
+        color: azure;
+        font-size: 15px;
+        width: 150px;
+        text-decoration: none;
+    }
+    .container-services-text3 .div-text-ser2-2 .div-text2 {
+        color: azure;
+        font-size: 15px;
+        width: 120px;
+        margin-top: -15%;
+        margin-left: -40px;
+        padding: 50px;
+    }
+    .container-services-text3 .div-text-ser2-2 .div-text2 a {
+        color: azure;
+        font-size: 15px;
+        width: 120px;
+        text-decoration: none;
+    }
+    
+}

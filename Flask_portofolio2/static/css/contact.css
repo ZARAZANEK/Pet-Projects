@@ -1,0 +1,926 @@
+.desktop-content {
+    display: block;
+}
+.mobile-content {
+    display: none;
+}
+
+.container-contact-text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 101.9%;
+    margin-top: 70px;
+    margin-left: -20px;
+    background-color: #F9FAFB;
+    height: 900px;
+}
+
+.container-contact-text1 .div-contact-text1 {
+    font-size: 37px;
+    width: 560px;
+    margin-left: 38%;
+    margin-top: 80px;
+}
+.container-contact-text1 .custom-line-contact {
+    position: relative;
+    width: 100px;
+    height: 4px;
+    margin-top: 10px;
+    border: none;
+    z-index: 10;
+    margin-left: 46%;
+    background-color: #2D76E2;
+}
+.container-contact-text1 .div-contact-text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 26%;
+    margin-top: 10px;
+}
+.container-contact-text1 .div-contact-text2 .div-text1 {
+    width: 700px;
+    height: auto;
+    font-size: 18px;
+    text-align: center;
+}
+.container-contact-text1 .small-bg-container-contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container-contact-text1 .small-bg-contact1 {
+    width: 400px;
+    height: 515px;
+    margin-top: 50px;
+    margin-left: 1%;
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7); /* Тіні */
+}
+.container-contact-text1 .small-bg-contact1 .name {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 24px;
+}
+.container-contact-text1 .small-bg-contact1 .cards-container1-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+.container-contact-text1 .small-bg-contact1 .cards-container1-contact .cards {
+    width: 250px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+.container-contact-text1 .small-bg-contact1 .cards-container1-contact .cards .name {
+    margin-left: 80px;
+    font-size: 20px;
+}
+.container-contact-text1 .small-bg-contact1 .cards-container1-contact .cards .description {
+    margin-top: 5px;
+    margin-left: 80px;
+    font-size: 16px;
+}
+.container-contact-text1 .small-bg-contact1 .cards-container1-contact .cards .img-bg {
+    width: 60px;
+    height: 60px;
+    margin-top: -50px;
+    margin-left: 10px;
+    border-radius: 8px;
+    border-radius: 6px;
+    background-color: #DBEAFE;
+}
+.container-contact-text1 .small-bg-contact1 .cards-container1-contact .cards .img-bg svg{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    filter: brightness(0) saturate(100%) invert(18%) sepia(99%) saturate(7487%) hue-rotate(240deg);
+}
+
+.container-contact-text1 .small-bg-contact2 {
+    width: 900px;
+    height: 515px;
+    margin-top: 50px;
+    margin-left: 2%;
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7); /* Тіні */
+}
+.container-contact-text1 .small-bg-contact2 .name {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 24px;
+}
+.container-contact-text1 .small-bg-contact2 .input-container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.container-contact-text1 .small-bg-contact2 .input-container1 .text {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.container-contact-text1 .small-bg-contact2 .input-container1 .input {
+    background-color: #FFFFFF;
+    color: burlywood;
+    border: 1px solid #EEEEEE;
+    border-radius: 6px;
+    transition: border 0.3s ease-in-out;
+    width: 80%;
+    height: 40px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+.container-contact-text1 .small-bg-contact2 .input-container1 .input:focus {
+    border: 1px solid #2D76E2; /* Синя рамка при фокусі */
+    outline: none; /* Видалення стандартного синього контуру браузера */
+}
+.container-contact-text1 .small-bg-contact2 .input-container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.container-contact-text1 .small-bg-contact2 .input-container2 .input {
+    background-color: #FFFFFF;
+    color: burlywood;
+    border: 1px solid #EEEEEE;
+    border-radius: 6px;
+    transition: border 0.3s ease-in-out;
+    width: 80%;
+    height: 40px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+.container-contact-text1 .small-bg-contact2 .input-container2 .text {
+    font-size: 19px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+.container-contact-text1 .small-bg-contact2 .input-container2 .input:focus {
+    border: 1px solid #2D76E2; /* Синя рамка при фокусі */
+    outline: none; /* Видалення стандартного синього контуру браузера */
+}
+.container-contact-text1 .small-bg-contact2 .input-container2 .input2 {
+    background-color: #FFFFFF;
+    color: burlywood;
+    border: 1px solid #EEEEEE; /* Початкова рамка */
+    border-radius: 6px;
+    transition: border 0.3s ease-in-out; /* Плавний перехід для ефектів рамки */
+    width: 80%;
+    height: 80px; /* Початкова висота */
+    max-height: 140px; /* Максимальна висота */
+    min-height: 20px;
+    margin-top: 5px;
+    padding: 10px; /* Відступи для тексту */
+    text-align: left;
+    resize: vertical; /* Дозволяє змінювати висоту */
+    font-size: 16px;
+}
+
+/* Зміна рамки, коли інпут активний (у фокусі) */
+.container-contact-text1 .small-bg-contact2 .input-container2 .input2:focus {
+    border: 1px solid #2D76E2; /* Синя рамка при фокусі */
+    outline: none; /* Видалення стандартного синього контуру браузера */
+}
+
+.sumbit-btn {
+    width: 300px;
+    height: 50px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3975FF;
+    font-size: 19px;
+    color: #FFFFFF;
+    display: flex; /* Використовуємо flexbox для вирівнювання */
+    align-items: center; /* Вертикальне вирівнювання */
+    justify-content: center; /* Горизонтальне вирівнювання */
+    gap: 10px; /* Відстань між текстом і SVG */
+    text-align: center;
+    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out; /* Плавний перехід */
+}
+
+.sumbit-btn:hover {
+    border-radius: 5px;
+    background-color: #3A70EE;
+    border: none;
+}
+
+.sumbit-btn svg {
+    width: 30px;
+    height: 30px;
+    /* Видалено зайві відступи, щоб вирівняти по центру */
+}
+
+
+
+.container-contact-text2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px; /* Збільшити відступ, щоб не перекривало */
+    z-index: 1; /* Піднімає цей контейнер вище */
+}
+
+.container-contact-text2-small-bg {
+    width: 100%;
+    height: 200px;
+    background-color: #161839;
+    position: absolute;
+    margin-top: 50px;
+    left: 0;
+    z-index: -2; /* Зменшуємо z-index, щоб кнопки залишались клікабельними */
+}
+
+.container-contact-text2  .div-text-con-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    margin-top: 50px;
+    margin-left: -75%;
+    font-size: 24px;
+    z-index: 1;
+    color: #E8E8E8;
+}
+.container-contact-text2 .div-text-con-2 {
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 135px;
+    font-size: 17px;
+    z-index: 1;
+    color: #E8E8E8;
+}
+
+.container-contact-text2-icones-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 50%;
+    text-align: center;
+    z-index: 11;
+}
+.container-contact-text2-icones-container .div-button-con-1 {
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgb(26, 21, 21);
+    border-radius: 50%;
+    background-color: #1F2041;
+    color: rgb(141, 141, 141);
+    margin: 10px -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: background-color 0.3s ease-in-out;
+    margin-left: 30px;
+    z-index: 5;
+    cursor: pointer; /* Додає можливість клікати */
+}
+
+.container-contact-text2-icones-container .div-button-con-1:hover {
+    background-color: #393FEE;
+}
+
+/* Виправлення для SVG */
+.container-contact-text2-icones-container .div-button-con-1 svg {
+    margin: 0; /* Убрав margin, щоб не було зміщень */
+    pointer-events: none; /* Щоб клік проходив через зображення */
+    width: 26px;
+    height: 26px;
+}
+
+.container-contact-text2-icones-container .div-button-con-1 img {
+    margin: 0; /* Убрав margin, щоб не було зміщень */
+    pointer-events: none; /* Щоб клік проходив через зображення */
+}
+
+.container-contact-text2-icones-container .div-button-con-1 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: inherit; /* Наслідуємо колір від батьківського елемента */
+    text-decoration: none; /* Видаляємо підкреслення посилань */
+}
+
+.container-contact-text2-icones-container .div-button-con-1 svg {
+    fill: #E8E8E8; /* Білий колір іконки */
+    transition: fill 0.3s ease-in-out;
+}
+
+.container-contact-text2-icones-container .div-button-con-1:hover {
+    background-color: #393FEE; /* Синій фон при наведенні */
+}
+
+.container-contact-text2-icones-container .div-button-con-1:hover svg {
+    fill: #ffffff; /* Зберігаємо білий колір іконки при наведенні */
+}
+
+
+.custom-line-con-2 {
+    position: relative;
+    background-color: rgb(141, 141, 141);
+    width: 87%;
+    height: 1px;
+    margin-top: 50px;
+    border: none;
+    z-index: 1000;
+    margin-left: -20px;
+}
+
+.container-contact-text3 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 5% 80% 10% 10%;
+    align-items: center;
+    width: 90%;
+    margin-top: 30px; /* Збільшити відступ, щоб не перекривало */
+    z-index: 1; /* Піднімає цей контейнер вище */
+    margin-left: 10%;
+    height: 50px;
+}
+
+.container-contact-text3 .div-text-con2-1 {
+    color: azure;
+    font-size: 15px;
+    width: 560px;
+}
+.container-contact-text3 .div-text-con2-1 svg {
+    width: 12px;
+    height: 12px;
+    margin-left: -47%;
+}
+.container-contact-text3 .div-text-con2-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: azure;
+    font-size: 15px;
+    width: 450px;
+    margin-left: 700px;
+}
+.container-contact-text3 .div-text-con2-2 .div-text1 {
+    color: azure;
+    font-size: 15px;
+    width: 250px;
+}
+.container-contact-text3 .div-text-con2-2 .div-text1 a {
+    color: azure;
+    font-size: 15px;
+    width: 250px;
+    text-decoration: none;
+}
+.container-contact-text3 .div-text-con2-2 .div-text2 {
+    color: azure;
+    font-size: 15px;
+    width: 250px;
+}
+.container-contact-text3 .div-text-con2-2 .div-text2 a {
+    color: azure;
+    font-size: 15px;
+    width: 250px;
+    text-decoration: none;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 400px;
+    height: 120px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.4s ease-in-out;
+    position: relative;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.popup-content p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 180px;
+    margin-top: 10px;
+    font-size: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: color 0.2s;
+    background-color: #2D76E2;
+}
+.close-btn:hover {
+    color: #000;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 667px) {
+    .desktop-content {
+        display: none;
+    }
+    .mobile-content {
+        display: block;
+    }
+    .container-contact-text1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 381px;
+        margin-top: 48px;
+        margin-left: -20px;
+        background-color: #F9FAFB;
+        height: auto;
+        padding: 50px;
+    }
+    
+    .container-contact-text1 .div-contact-text1 {
+        font-size: 37px;
+        width: 350px;
+        margin-left: 3.5%;
+        margin-top: 80px;
+    }
+    .container-contact-text1 .custom-line-contact {
+        position: relative;
+        width: 100px;
+        height: 4px;
+        margin-top: 10px;
+        border: none;
+        z-index: 10;
+        margin-left: 35%;
+        background-color: #2D76E2;
+    }
+    .container-contact-text1 .div-contact-text2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: -2%;
+        margin-top: 10px;
+    }
+    .container-contact-text1 .div-contact-text2 .div-text1 {
+        width: 400px;
+        height: auto;
+        font-size: 18px;
+        text-align: center;
+    }
+    .container-contact-text1 .small-bg-container-contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container-contact-text1 .small-bg-contact1 {
+        width: 430px;
+        height: 340px;
+        margin-top: 50px;
+        margin-left: -5%;
+        position: relative;
+        background-color: #FFFFFF;
+        border-radius: 8px;
+        box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7); /* Тіні */
+    }
+    .container-contact-text1 .small-bg-contact1 .name {
+        margin-top: 30px;
+        margin-left: 30px;
+        font-size: 24px;
+    }
+    .container-contact-text1 .small-bg-contact1 .cards-container1-contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -10px;
+        margin-left: 10px;
+    }
+    .container-contact-text1 .small-bg-contact1 .cards-container1-contact .cards {
+        width: 250px;
+        height: 50px;
+        margin-top: 20px;
+        margin-left: 10px;
+        border-radius: 8px;
+    }
+    .container-contact-text1 .small-bg-contact1 .cards-container1-contact .cards .name {
+        margin-left: 80px;
+        font-size: 20px;
+    }
+    .container-contact-text1 .small-bg-contact1 .cards-container1-contact .cards .description {
+        margin-top: 5px;
+        margin-left: 80px;
+        font-size: 16px;
+    }
+    .container-contact-text1 .small-bg-contact1 .cards-container1-contact .cards .img-bg {
+        width: 60px;
+        height: 60px;
+        margin-top: -50px;
+        margin-left: 10px;
+        border-radius: 8px;
+        border-radius: 6px;
+        background-color: #DBEAFE;
+    }
+    .container-contact-text1 .small-bg-contact1 .cards-container1-contact .cards .img-bg svg{
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 10px;
+        filter: brightness(0) saturate(100%) invert(18%) sepia(99%) saturate(7487%) hue-rotate(240deg);
+    }
+    .container-contact-text1 .small-bg-contact2 {
+        width: 335px;
+        height: auto;
+        margin-top: 50px;
+        margin-left: -6%;
+        position: relative;
+        background-color: #FFFFFF;
+        border-radius: 8px;
+        box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7); /* Тіні */
+        padding: 50px;
+    }
+    .container-contact-text1 .small-bg-contact2 .name {
+        margin-top: -10px;
+        margin-left: -10px;
+        font-size: 24px;
+    }
+    .container-contact-text1 .small-bg-contact2 .input-container1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        margin-top: 15px;
+        margin-left: -20px;
+    }
+    .container-contact-text1 .small-bg-contact2 .input-container1 .text {
+        font-size: 20px;
+        margin-top:15px;
+        margin-left: 5px;
+    }
+    .container-contact-text1 .small-bg-contact2 .input-container1 .input {
+        background-color: #FFFFFF;
+        color: burlywood;
+        border: 1px solid #EEEEEE;
+        border-radius: 6px;
+        transition: border 0.3s ease-in-out, width 0.3s ease-in-out;
+        width: 85%;
+        height: 40px;
+        margin-top: 5px;
+        font-size: 16px;
+    }
+    .container-contact-text1 .small-bg-contact2 .input-container1 .input:focus {
+        border: 1px solid #2D76E2; /* Синя рамка при фокусі */
+        outline: none; /* Видалення стандартного синього контуру браузера */
+        width: 100%;
+    }
+    .container-contact-text1 .small-bg-contact2 .input-container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 15px;
+        margin-left: -20px;
+    }
+    .container-contact-text1 .small-bg-contact2 .input-container2 .input {
+        background-color: #FFFFFF;
+        color: burlywood;
+        border: 1px solid #EEEEEE;
+        border-radius: 6px;
+        transition: border 0.3s ease-in-out, width 0.3s ease-in-out;
+        width: 85%;
+        height: 40px;
+        margin-top: 5px;
+        font-size: 16px;
+    }
+    .container-contact-text1 .small-bg-contact2 .input-container2 .text {
+        font-size: 19px;
+        margin-top: 8px;
+        margin-left: 5px;
+    }
+    .container-contact-text1 .small-bg-contact2 .input-container2 .input:focus {
+        border: 1px solid #2D76E2; /* Синя рамка при фокусі */
+        outline: none; /* Видалення стандартного синього контуру браузера */
+        width: 100%;
+    }
+    .container-contact-text1 .small-bg-contact2 .input-container2 .input2 {
+        background-color: #FFFFFF;
+        color: burlywood;
+        border: 1px solid #EEEEEE; /* Початкова рамка */
+        border-radius: 6px;
+        transition: border 0.3s ease-in-out, width 0.3s ease-in-out; /* Плавний перехід для ефектів рамки */
+        width: 85%;
+        height: 80px; /* Початкова висота */
+        max-height: 300px; /* Максимальна висота */
+        min-height: 20px;
+        margin-top: 5px;
+        padding: 10px; /* Відступи для тексту */
+        text-align: left;
+        resize: vertical; /* Дозволяє змінювати висоту */
+        font-size: 16px;
+    }
+    
+    /* Зміна рамки, коли інпут активний (у фокусі) */
+    .container-contact-text1 .small-bg-contact2 .input-container2 .input2:focus {
+        border: 1px solid #2D76E2; /* Синя рамка при фокусі */
+        outline: none; /* Видалення стандартного синього контуру браузера */
+        width: 100%;
+    }
+    
+    .sumbit-btn {
+        width: 300px;
+        height: 50px;
+        position: relative;
+        margin-top: 10px;
+        margin-left: 15px;
+        border: none;
+        border-radius: 6px;
+        background-color: #3975FF;
+        font-size: 19px;
+        color: #FFFFFF;
+        display: flex; /* Використовуємо flexbox для вирівнювання */
+        align-items: center; /* Вертикальне вирівнювання */
+        justify-content: center; /* Горизонтальне вирівнювання */
+        gap: 10px; /* Відстань між текстом і SVG */
+        text-align: center;
+        transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out; /* Плавний перехід */
+    }
+    
+    .sumbit-btn:hover {
+        border-radius: 5px;
+        background-color: #3A70EE;
+        border: none;
+    }
+    
+    .sumbit-btn svg {
+        width: 30px;
+        height: 30px;
+        /* Видалено зайві відступи, щоб вирівняти по центру */
+    }
+    .container-contact-text2 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px; /* Збільшити відступ, щоб не перекривало */
+        z-index: 1; /* Піднімає цей контейнер вище */
+    }
+    
+    .container-contact-text2-small-bg {
+        width: 80%;
+        height: 200px;
+        background-color: #161839;
+        position: absolute;
+        margin-top: 50px;
+        left: 0;
+        z-index: -2; /* Зменшуємо z-index, щоб кнопки залишались клікабельними */
+    }
+    
+    .container-contact-text2  .div-text-con-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 250px;
+        margin-top: -20px;
+        margin-left: -17%;
+        font-size: 24px;
+        z-index: 1;
+        color: #E8E8E8;
+    }
+    .container-contact-text2 .div-text-con-2 {
+        width: 350px;
+        margin-top: 10px;
+        margin-left: 9%;
+        font-size: 17px;
+        z-index: 1;
+        color: #E8E8E8;
+    }
+    
+    .container-contact-text2-icones-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 90px;
+        margin-left: 6%;
+        text-align: center;
+        z-index: 11;
+    }
+    .container-contact-text2-icones-container .div-button-con-1 {
+        width: 42px;
+        height: 42px;
+        border: 1px solid rgb(26, 21, 21);
+        border-radius: 50%;
+        background-color: #1F2041;
+        color: rgb(141, 141, 141);
+        margin: 10px -20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        transition: background-color 0.3s ease-in-out;
+        margin-left: 30px;
+        z-index: 5;
+        cursor: pointer; /* Додає можливість клікати */
+    }
+    
+    .container-contact-text2-icones-container .div-button-con-1:hover {
+        background-color: #393FEE;
+    }
+    
+    /* Виправлення для SVG */
+    .container-contact-text2-icones-container .div-button-con-1 svg {
+        margin: 0; /* Убрав margin, щоб не було зміщень */
+        pointer-events: none; /* Щоб клік проходив через зображення */
+        width: 26px;
+        height: 26px;
+    }
+    
+    .container-contact-text2-icones-container .div-button-con-1 img {
+        margin: 0; /* Убрав margin, щоб не було зміщень */
+        pointer-events: none; /* Щоб клік проходив через зображення */
+    }
+    
+    .container-contact-text2-icones-container .div-button-con-1 a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        color: inherit; /* Наслідуємо колір від батьківського елемента */
+        text-decoration: none; /* Видаляємо підкреслення посилань */
+    }
+    
+    .container-contact-text2-icones-container .div-button-con-1 svg {
+        fill: #E8E8E8; /* Білий колір іконки */
+        transition: fill 0.3s ease-in-out;
+    }
+    
+    .container-contact-text2-icones-container .div-button-con-1:hover {
+        background-color: #393FEE; /* Синій фон при наведенні */
+    }
+    
+    .container-contact-text2-icones-container .div-button-con-1:hover svg {
+        fill: #ffffff; /* Зберігаємо білий колір іконки при наведенні */
+    }
+    
+    
+    .custom-line-con-2 {
+        position: relative;
+        background-color: rgb(141, 141, 141);
+        width: 95%;
+        height: 1px;
+        margin-top: 50px;
+        border: none;
+        z-index: 1000;
+        margin-left: 70px;
+    }
+    
+    .container-contact-text3 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin-top: 30px; /* Збільшити відступ, щоб не перекривало */
+        z-index: 1; /* Піднімає цей контейнер вище */
+        margin-left: 10%;
+        height: 50px;
+    }
+    
+    .container-contact-text3 .div-text-con2-1 {
+        color: azure;
+        font-size: 15px;
+        width: 350px;
+        margin-left: 45%;
+    }
+    .container-contact-text3 .div-text-con2-1 svg {
+        width: 12px;
+        height: 12px;
+        margin-left: -75%;
+    }
+    .container-contact-text3 .div-text-con2-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: azure;
+        font-size: 15px;
+        width: 320px;
+        margin-left: 17%;
+        margin-top: -5%;
+        padding: 50px;
+    }
+    .container-contact-text3 .div-text-con2-2 .div-text1 {
+        color: azure;
+        font-size: 15px;
+        width: 100px;
+    }
+    .container-contact-text3 .div-text-con2-2 .div-text1 a {
+        color: azure;
+        font-size: 15px;
+        width: 100px;
+        text-decoration: none;
+    }
+    .container-contact-text3 .div-text-con2-2 .div-text2 {
+        color: azure;
+        font-size: 15px;
+        width: 100px;
+        margin-left: 35%;
+    }
+    .container-contact-text3 .div-text-con2-2 .div-text2 a {
+        color: azure;
+        font-size: 15px;
+        width: 100px;
+        text-decoration: none;
+    }
+    
+    .popup-mb {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 35px;
+        top: 250px;
+        width: 400px;
+        height: 250px;
+        background-color: none;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .popup-content-mb {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        padding: 30px 40px;
+        border-radius: 12px;
+        text-align: center;
+        width: 320px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        animation: fadeIn 0.4s ease-in-out;
+        position: relative;
+    }
+    
+    .popup-content-mb p {
+        margin: 10px 0;
+        font-size: 19px;
+        padding: 40px;
+        margin-top: -30px;
+    }
+    
+    .close-btn-mb {
+        position: relative;
+        right: 190px;
+        margin-top: -40px;
+        font-size: 24px;
+        color: #FFFFFF;
+        cursor: pointer;
+        transition: color 0.2s;
+        background-color: #2D76E2;
+        width: 120px;
+    }
+    .close-btn-mb:hover {
+        color: #000;
+    }
+    
+}
